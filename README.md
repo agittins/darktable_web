@@ -25,3 +25,12 @@ Caveats:
 - One day I plan to add support for rating and tagging images to make it
   easy to do the initial _Culling From The Couch_(tm).
 
+## Design
+- Django app for easy framework, and to teach myself Django :-)
+- Darktable library in `~/config/darktable/library.db` used for loading
+  image paths, metadata etc (no reading of xmp files, or access to
+  source images required)
+- Use local darktable image cache in
+  `~/.cache/darktable/mipmaps-[hash].d/` as the display images. mip
+  level 5 is about 2k so plenty enough res for this.
+
